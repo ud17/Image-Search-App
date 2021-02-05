@@ -10,7 +10,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 import javax.inject.Singleton
 
 @Module             //annotates the object to indicate the we will get our dependencies from here
-@InstallIn(ApplicationComponent::class)
+@InstallIn(ApplicationComponent::class)    //this annotation decides the scope, i.e if application component then this will work unless the app is running
 object AppModule {
 
     @Provides           //indicates that the upcoming function will provide dependency
